@@ -1,0 +1,395 @@
+$color_1: #fff;
+$color_hover: #fc635e; /*hover*/
+$color_span: #fd5c56; 
+$color_border: #db5854; /* border*/
+$text_color_content: gray; 
+$background_color: #f2f2f2; 
+
+::-webkit-scrollbar { 
+    width: 0px; 
+}
+body{
+    margin-top: 0;
+    width: 100%;
+    h1 {
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 47px;
+        color:$text_color_content;
+        span {
+            color: $color_span;
+        }
+    }
+    a.arrowDown {
+        font-size: 30px;
+        text-decoration: none;
+        color:$color_hover ;
+        border: 1px solid $color_border;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        &:hover {
+            background:$color_hover;
+            color: white;
+        }
+    }
+    a.btn {
+        color: $color_border;
+        text-decoration: none;
+        font-size: 22px;
+        border: 2px solid $color_border;
+        padding: 12px 28px;
+        border-radius: 8px;
+
+        &:hover.btn {
+            background:$color_hover;
+            color: $color_1;
+        }
+    }
+    }
+header{
+    background: url('../img/background.png') ;
+    display: flex;
+    flex-direction: column;
+    min-height: 760px;
+    width: 100%;
+    max-width: 1260px;
+    justify-content: space-around;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    > a {
+        color: $color_1;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+        img {
+            padding-right: 15px;
+            vertical-align: middle;
+        }
+    }
+    .menu {
+        list-style: none;
+        text-transform: uppercase;
+        display: flex;
+        li {
+            padding-left: 15px;
+            a {
+                color: $color_1;
+                font-size: 20px;
+                text-decoration: none;
+                &:hover {
+                    color: $color_hover;
+                    border-bottom: $color_border 3px solid;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+}
+.mainText {
+    text-align: center;
+    .h1-title {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 50px;
+        color: $color_1;
+        span {
+            color: $color_span;
+        }
+    }
+
+    p {
+        color: $color_1;
+        font-size: 22px;
+        padding-bottom: 30px;
+    }
+}
+}
+.receive {
+    margin-top: 0;
+    text-align: center;
+    background: $background_color;
+    padding: 70px 50px 10px 50px;
+    p {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    h1 {
+        margin: 0;
+    }
+    .icons {
+        display: flex;
+        h3 {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 18px;
+        }
+        div {
+            padding: 15px;
+        }
+    }
+}
+.expand {
+    padding: 100px 100px 15px 100px;
+    background: url('../img/expand.png') ;
+    .mainText {
+        text-align: center;
+        padding: 50px;
+        border: 15px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 80px;
+        h1 {
+            text-decoration: none;
+            margin-bottom: 50px;
+        }
+    }
+}
+.our-process {
+    text-align: center;
+    padding-top: 52px;
+    padding-bottom: 82px;
+    p {
+        color: $text_color_content;
+    }
+    .back-process{
+        width: auto;
+        height: 500px;
+        background-image: url("/img/Our_process.png");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+.wedo, .wedo2, .wedo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $background_color;
+    padding: 55px;
+    .container{
+        padding-top: 135px;
+        padding-bottom: 82px;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1, h2, p {
+        color: $text_color_content;
+    }
+    p {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    h2{
+        text-transform: uppercase;
+        border-left: 10px solid $color_hover;
+        padding-left: 10px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.wedo2 {
+    background:$color_1;
+    h2 {
+        border-left: none;
+        padding-left: 0;
+        padding-right: 10px;
+        border-right: 10px solid $color_border;
+    }
+    .left{
+        text-align: right;
+        order: 2;
+    }
+    .right{
+        order: 1;
+    }
+}
+.porfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 36px;
+    h1 {
+        margin:50px 0;
+        padding-bottom: 5px;
+    }
+    .btn {
+        margin-top: 58px;
+    }
+    .arrowDown{
+        margin-top: 24px;
+    }
+    .galerry {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.our_team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: $background_color;
+    padding: 30px;
+    margin-bottom: 10px;
+    .cont {
+        display: flex;
+        justify-content: space-around;
+    }
+    .people {
+        text-align: center;
+    }
+    a{
+        color: #414141;
+        font-size: 10px;
+        &:hover {
+            color: #868686;
+        }
+    }
+    h3 {
+        color:#414141;
+        padding-bottom: 5px;
+        span {
+            color: $color_hover;
+        }
+    }
+}
+@media screen and (max-width: 770px) and (min-width: 550px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .expand {
+        padding: 30px 30px 10px 30px;
+    }
+
+    .expand .mainText {
+        padding: 50px 0;
+        margin-bottom: 20px;
+    }
+
+    .expand .mainText h1 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 549px) {
+    nav {
+        padding: 0px 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    .mainText {
+        h1 {
+            margin-top: -20px;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+    }
+    .expand {
+        padding: 10px;
+    }
+
+    .expand .mainText {
+        border: none;
+        padding: 30px 0;
+        margin-bottom: 20px;
+    }
+    .expand .mainText h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .our-process .steps {
+        display: block;
+    }
+    .our-process .back-process {
+        display: none;
+    }
+    .our_team .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .receive {
+        padding: 30px 20px;
+    }
+    .receive h1 {
+        font-size: 26px;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icons div {
+        max-width: 350px;
+    }
+
+    .icons div p {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .wedo,
+    .wedo2,
+    .wedo3 {
+        padding: 5px;
+        text-align: center;
+    }
+    .wedo .container, 
+    .wedo2 .container, 
+    .wedo3 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wedo .container img,
+    .wedo2 .container img,
+    .wedo3 .container img
+     {
+        width: 100%;
+    }
+    .wedo  .container .right,
+    .wedo2  .container .right,
+    .wedo3  .container .right
+     {
+        max-width: 100%;
+        order: 1;
+    }
+    .wedo .container .left,
+    .wedo2 .container .left,
+    .wedo3 .container .left
+     {
+        order: 2;
+        max-width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .wedo  .container .btn,
+    .wedo2  .container .btn,
+    .wedo3  .container .btn
+    {
+        margin-bottom: 20px;
+    }
+}
